@@ -1,4 +1,30 @@
 [
-  { "name": "Louis", "goal": "perdre 3kg",       "goal_type": "perte",  "days_in": 5 },
-  { "name": "Test",  "goal": "gagner du muscle",  "goal_type": "muscle", "days_in": 1 }
+  {
+    "id": "louis",
+    "name": "Louis",
+    "age": 28,
+    "height_cm": 178,
+    "current_weight_kg": 85.0,
+    "target_weight_kg": 78.0,
+    "lifestyle": "moderate",
+    "readiness": "high",
+    "constraints": [],
+    "current_phase": 2,
+    "autonomy_level": "low",
+    "start_date": "2026-06-30"
+  },
+  {
+    "id": "sophie",
+    "name": "Sophie",
+    "age": 45,
+    "height_cm": 165,
+    "current_weight_kg": 92.0,
+    "target_weight_kg": 72.0,
+    "lifestyle": "sedentary",
+    "readiness": "medium",
+    "constraints": ["knee pain"],
+    "current_phase": 1,
+    "autonomy_level": "low",
+    "start_date": "2026-07-04"
+  }
 ]

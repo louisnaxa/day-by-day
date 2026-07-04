@@ -46,7 +46,7 @@ generic message. The MVP may DISPROVE its value hypothesis; that is valid.
 
 - BRIEF-09 — GENERAL strategic framework (universal principles + SAFETY
   constraints as strategy-layer rules). Product layer. Design work. ✅ DONE
-- BRIEF-10 — Client PROFILE + OBJECTIVE (product sets the client up).
+- BRIEF-10 — Client PROFILE + OBJECTIVE (product sets the client up). ✅ DONE
 - BRIEF-11 — Product COMPUTES the profile-customized strategy from framework +
   profile + objective. SAFETY APPLIED HERE. Output = a safe per-client plan.
 - BRIEF-12 — PROGRESS LOG: the client's changing state over time, append-only.
