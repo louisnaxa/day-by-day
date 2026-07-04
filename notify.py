@@ -5,7 +5,7 @@ TOPIC = "louis-buzz-2026"  # change this to match what you typed in the app
 
 req = urllib.request.Request(
     f"https://ntfy.sh/{TOPIC}",
-    data=b"Day 1: it works.",
+    data=b"Day 3. Ship something small.",
     method="POST",
 )
 ctx = ssl.create_default_context()
