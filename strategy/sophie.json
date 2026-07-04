@@ -1,0 +1,19 @@
+{
+  "client_id": "sophie",
+  "status": "active",
+  "current_bmi": 33.8,
+  "target_bmi": 26.4,
+  "current_weight_kg": 92.0,
+  "target_weight_kg": 72.0,
+  "kg_to_lose": 20.0,
+  "weekly_rate_cap_kg": 0.92,
+  "current_phase": 1,
+  "phase_focus": "Assessment: collect baseline, verify safety, set realistic target, identify 2-3 keystone habits.",
+  "lifestyle": "sedentary",
+  "readiness": "medium",
+  "autonomy_level": "low",
+  "constraints": [
+    "knee pain"
+  ],
+  "age_note": "Age 36–55: include resistance training to preserve muscle alongside fat loss."
+}

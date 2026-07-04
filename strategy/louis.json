@@ -1,0 +1,17 @@
+{
+  "client_id": "louis",
+  "status": "active",
+  "current_bmi": 26.8,
+  "target_bmi": 24.6,
+  "current_weight_kg": 85.0,
+  "target_weight_kg": 78.0,
+  "kg_to_lose": 7.0,
+  "weekly_rate_cap_kg": 0.85,
+  "current_phase": 2,
+  "phase_focus": "Habit-building: build 2-3 keystone habits (meals, movement, hydration). No strict caloric targets yet.",
+  "lifestyle": "moderate",
+  "readiness": "high",
+  "autonomy_level": "low",
+  "constraints": [],
+  "age_note": null
+}

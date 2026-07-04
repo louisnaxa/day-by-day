@@ -48,7 +48,7 @@ generic message. The MVP may DISPROVE its value hypothesis; that is valid.
   constraints as strategy-layer rules). Product layer. Design work. ✅ DONE
 - BRIEF-10 — Client PROFILE + OBJECTIVE (product sets the client up). ✅ DONE
 - BRIEF-11 — Product COMPUTES the profile-customized strategy from framework +
-  profile + objective. SAFETY APPLIED HERE. Output = a safe per-client plan.
+  profile + objective. SAFETY APPLIED HERE. Output = a safe per-client plan. ✅ DONE
 - BRIEF-12 — PROGRESS LOG: the client's changing state over time, append-only.
   The data loop that feeds Phase 2; also live context for the coach.
 - BRIEF-13 — The AI COACH: inject (framework + customized strategy + coaching

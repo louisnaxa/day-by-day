@@ -10,4 +10,5 @@
 2026-07-04 — BRIEF-08 — done — NOTIFY secret wired into workflow; scheduled Action generates AI messages automatically
 2026-07-04 — BRIEF-09 — done — FRAMEWORK.md written: 5 phases, tailoring principles, safety constraints with rate-of-loss formula
 2026-07-04 — BRIEF-10 — done — coach.json replaced with rich 12-field client profiles; PROFILE.md documents schema; notify.py updated
+2026-07-04 — BRIEF-11 — done — compute_strategy.py applies framework rules; produces safe per-client strategy with rate cap and referral triggers
 2026-07-04 — BRIEF-08 — done — ANTHROPIC_API_KEY added as GitHub secret; workflow installs anthropic and passes key to notify.py
