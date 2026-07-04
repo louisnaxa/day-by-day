@@ -12,5 +12,12 @@
     "adherence": "high",
     "phase": 2,
     "note": "Bonne semaine, objectifs respectes."
+  },
+  {
+    "date": "2026-07-04",
+    "weight_kg": 88.0,
+    "adherence": "high",
+    "phase": 1,
+    "note": "Jour 1 — baseline."
   }
 ]
