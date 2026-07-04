@@ -1,4 +1,4 @@
 [
-  { "name": "Louis", "goal": "perdre 3kg", "message": "Rappel: bois de l'eau et bouge 20 min." },
-  { "name": "Test",  "goal": "gagner du muscle", "message": "Rappel: mange assez de proteines aujourd'hui." }
+  { "name": "Louis", "goal": "perdre 3kg",       "goal_type": "perte",  "days_in": 5 },
+  { "name": "Test",  "goal": "gagner du muscle",  "goal_type": "muscle", "days_in": 1 }
 ]
