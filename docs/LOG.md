@@ -8,4 +8,5 @@
 2026-07-04 — BRIEF-06 — done — build_message() generates text from goal_type fields; two people get visibly different messages
 2026-07-04 — BRIEF-07 — done — build_message() calls Anthropic API; AI writes a distinct coaching line per person in French
 2026-07-04 — BRIEF-08 — done — NOTIFY secret wired into workflow; scheduled Action generates AI messages automatically
+2026-07-04 — BRIEF-09 — done — FRAMEWORK.md written: 5 phases, tailoring principles, safety constraints with rate-of-loss formula
 2026-07-04 — BRIEF-08 — done — ANTHROPIC_API_KEY added as GitHub secret; workflow installs anthropic and passes key to notify.py
