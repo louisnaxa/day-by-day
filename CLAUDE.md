@@ -8,9 +8,10 @@ irrelevant to any single session — only the current brief matters.
 
 ## How to know where we are
 1. Read `docs/LOG.md` — one line per completed task, most recent last
-2. Read the highest-numbered `docs/BRIEF-XX.md` — if not logged as done in
+2. Read `ROADMAP.md` — the 6-step path from notifier to coaching app
+3. Read the highest-numbered `docs/BRIEF-XX.md` — if not logged as done in
    LOG.md, it is the current task
-3. Never assume progress that isn't written in these files
+4. Never assume progress that isn't written in these files
 
 ## Working rules (non-negotiable)
 - Do ONLY what the current brief says. No "while we're at it" improvements.
