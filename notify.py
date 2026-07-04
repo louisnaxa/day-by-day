@@ -1,15 +1,16 @@
 import urllib.request
 import ssl
+import certifi
 import json
 from coach_message import generate_message
 
 TOPIC = "louis-buzz-2026"  # change this to match what you typed in the app
 
-coach = json.load(open("coach.json"))
+# Use certifi's certificate bundle — correct fix for macOS Python's missing system certs.
+# On Linux (GitHub Actions), ssl.create_default_context() works without this.
+ctx = ssl.create_default_context(cafile=certifi.where())
 
-ctx = ssl.create_default_context()
-ctx.check_hostname = False
-ctx.verify_mode = ssl.CERT_NONE
+coach = json.load(open("coach.json"))
 
 for person in coach:
     msg = generate_message(person)

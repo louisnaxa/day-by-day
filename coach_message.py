@@ -50,21 +50,11 @@ def _format_progress(entries):
     return "\n".join(lines)
 
 
-def generate_message(profile):
+def build_prompt(profile, strategy, recent):
     """
-    Build and send the coach prompt. Returns the AI-generated message string.
-    Falls back to a plain message if the API call fails.
+    Assemble the full coach prompt from the three inputs + live context.
+    Separated so it can be tested without making an API call.
     """
-    client_id = profile["id"]
-
-    # Load the pre-computed strategy (product layer output)
-    strategy = _load_json(f"strategy/{client_id}.json")
-
-    # Load the last 3 progress entries (live context)
-    progress_path = Path(f"progress/{client_id}.json")
-    recent = _load_json(progress_path)[-3:] if progress_path.exists() else []
-
-    # ── Assemble the prompt ────────────────────────────────────────────────
     strategy_block = (
         f"Client: {profile['name']}, {profile['age']} ans\n"
         f"Phase: {strategy['current_phase']}/5 — {strategy['phase_focus']}\n"
@@ -76,8 +66,7 @@ def generate_message(profile):
         f"Contraintes: {', '.join(strategy['constraints']) if strategy['constraints'] else 'aucune'}"
         + (f"\nNote: {strategy['age_note']}" if strategy.get("age_note") else "")
     )
-
-    prompt = f"""{FRAMEWORK_BRIEF}
+    return f"""{FRAMEWORK_BRIEF}
 
 STRATÉGIE DE CE CLIENT:
 {strategy_block}
@@ -89,6 +78,19 @@ PROGRESSION RÉCENTE:
 
 Écris UN message de coaching en français pour {profile['name']} aujourd'hui. \
 Court, direct, personnel. Pas de guillemets."""
+
+
+def generate_message(profile):
+    """
+    Build and send the coach prompt. Returns the AI-generated message string.
+    Falls back to a plain message if the API call fails.
+    """
+    client_id = profile["id"]
+    strategy = _load_json(f"strategy/{client_id}.json")
+    progress_path = Path(f"progress/{client_id}.json")
+    recent = _load_json(progress_path)[-3:] if progress_path.exists() else []
+
+    prompt = build_prompt(profile, strategy, recent)
 
     try:
         ai = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])

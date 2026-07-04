@@ -11,7 +11,8 @@
     "constraints": [],
     "current_phase": 2,
     "autonomy_level": "low",
-    "start_date": "2026-06-30"
+    "start_date": "2026-06-30",
+    "desired_weekly_loss_kg": null
   },
   {
     "id": "sophie",
@@ -25,6 +26,7 @@
     "constraints": ["knee pain"],
     "current_phase": 1,
     "autonomy_level": "low",
-    "start_date": "2026-07-04"
+    "start_date": "2026-07-04",
+    "desired_weekly_loss_kg": null
   }
 ]

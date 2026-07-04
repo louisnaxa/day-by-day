@@ -44,6 +44,19 @@ def compute_strategy(profile):
             "status": "refer",
             "reason": "Client is under 18 — refer to a pediatric specialist.",
         }
+    desired = profile.get("desired_weekly_loss_kg")
+    if desired is not None:
+        hard_cap = round(profile["current_weight_kg"] * RATE_CAP_PERCENT * 1.5, 2)
+        if desired > hard_cap:
+            return {
+                "client_id": client_id,
+                "status": "refer",
+                "reason": (
+                    f"Requested rate {desired} kg/week exceeds 1.5× the safe cap "
+                    f"({hard_cap} kg/week for {profile['current_weight_kg']} kg). "
+                    f"Refer to a dietitian before proceeding."
+                ),
+            }
     if current_bmi < 18.5:
         return {
             "client_id": client_id,

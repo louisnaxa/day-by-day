@@ -54,7 +54,7 @@ generic message. The MVP may DISPROVE its value hypothesis; that is valid.
 - BRIEF-13 — The AI COACH: inject (framework + customized strategy + coaching
   principles) + live context, and EXECUTE. Includes the value test vs template.
   This is the MVP-value moment. ✅ DONE
-- BRIEF-14 — (likely) tests + CI, once logic can fail quietly.
+- BRIEF-14 — Tests + CI: 16 pytest tests cover all safety rules; CI on every push; SSL fixed. ✅ DONE
 
 ## PHASE 2 — Statistical analysis of outcomes (DATA-GATED, do not start early)
 Only meaningful after Phase 1 has collected clean, structured outcome data
