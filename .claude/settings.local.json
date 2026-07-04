@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 notify.py)",
+      "Bash(git --version && git config --global user.name && git config --global user.email)",
+      "Bash(gh auth:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(python3 -c \"import yaml; yaml.safe_load\\(open\\('/Users/louis/Documents/Pushproject/.github/workflows/notify.yml'\\)\\); print\\('YAML is valid'\\)\")",
+      "Bash(git log:*)",
+      "Bash(gh api:*)",
+      "Bash(gh workflow:*)"
+    ]
+  }
+}
