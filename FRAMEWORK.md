@@ -122,11 +122,14 @@ goals. The computation step checks BMI against this floor before anything else.
 body weight per week.**
 
 Examples:
-- 90 kg client → cap at 0.90 kg/week
 - 65 kg client → cap at 0.65 kg/week
+- 90 kg client → cap at 0.90 kg/week
+- 140 kg client → cap at 1.40 kg/week
 
-**Absolute ceiling:** regardless of the formula result, the plan never targets
-more than **1.0 kg/week** of loss.
+There is no flat absolute ceiling on top of this formula. A flat kg/week ceiling
+would penalise heavier clients by holding them to a more aggressive relative rate
+than lighter ones — the percentage formula already does the right calibration
+across body weights.
 
 The formula result is a **maximum**, not a target. The strategy should aim for
 0.5–0.75%/week for sustainability; 1%/week is the hard upper bound.
