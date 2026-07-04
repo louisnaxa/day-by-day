@@ -50,7 +50,7 @@ generic message. The MVP may DISPROVE its value hypothesis; that is valid.
 - BRIEF-11 — Product COMPUTES the profile-customized strategy from framework +
   profile + objective. SAFETY APPLIED HERE. Output = a safe per-client plan. ✅ DONE
 - BRIEF-12 — PROGRESS LOG: the client's changing state over time, append-only.
-  The data loop that feeds Phase 2; also live context for the coach.
+  The data loop that feeds Phase 2; also live context for the coach. ✅ DONE
 - BRIEF-13 — The AI COACH: inject (framework + customized strategy + coaching
   principles) + live context, and EXECUTE. Includes the value test vs template.
   This is the MVP-value moment.
