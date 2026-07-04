@@ -1,20 +1,6 @@
 [
   {
     "date": "2026-07-04",
-    "weight_kg": 85.0,
-    "adherence": "medium",
-    "phase": 2,
-    "note": "Debut du programme, habitudes a installer."
-  },
-  {
-    "date": "2026-07-04",
-    "weight_kg": 84.4,
-    "adherence": "high",
-    "phase": 2,
-    "note": "Bonne semaine, objectifs respectes."
-  },
-  {
-    "date": "2026-07-04",
     "weight_kg": 88.0,
     "adherence": "high",
     "phase": 1,
