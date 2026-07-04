@@ -6,3 +6,4 @@
 2026-07-04 — BRIEF-04 — done — notify.py reads message content from coach.json instead of hardcoded string
 2026-07-04 — BRIEF-05 — done — coach.json is a list of 2 people, notify.py loops and sends one notification per person
 2026-07-04 — BRIEF-06 — done — build_message() generates text from goal_type fields; two people get visibly different messages
+2026-07-04 — BRIEF-07 — done — build_message() calls Anthropic API; AI writes a distinct coaching line per person in French

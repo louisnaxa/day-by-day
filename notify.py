@@ -1,16 +1,28 @@
 import urllib.request
 import ssl
 import json
+import os
+import anthropic
 
 TOPIC = "louis-buzz-2026"  # change this to match what you typed in the app
 
 def build_message(person):
     name, goal, day = person['name'], person['goal'], person['days_in']
-    if person['goal_type'] == "perte":
-        return f"{name} — Jour {day}. Objectif: {goal}. Bois de l'eau et bouge 20 min."
-    elif person['goal_type'] == "muscle":
-        return f"{name} — Jour {day}. Objectif: {goal}. Mange assez de proteines et dors bien."
-    else:
+    try:
+        client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
+        response = client.messages.create(
+            model="claude-haiku-4-5-20251001",
+            max_tokens=60,
+            messages=[{
+                "role": "user",
+                "content": (
+                    f"Tu es un coach diet concis. Ecris UNE phrase de motivation en francais pour "
+                    f"{name}, jour {day}, objectif: {goal}. Une phrase courte, directe, pas de guillemets."
+                )
+            }]
+        )
+        return response.content[0].text.strip()
+    except Exception:
         return f"{name} — Jour {day}. Objectif: {goal}. Continue comme ca."
 
 coach = json.load(open("coach.json"))
