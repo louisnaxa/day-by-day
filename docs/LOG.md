@@ -12,4 +12,5 @@
 2026-07-04 — BRIEF-10 — done — coach.json replaced with rich 12-field client profiles; PROFILE.md documents schema; notify.py updated
 2026-07-04 — BRIEF-11 — done — compute_strategy.py applies framework rules; produces safe per-client strategy with rate cap and referral triggers
 2026-07-04 — BRIEF-12 — done — append-only progress log (log_progress.py + progress/*.json); PROGRESS.md documents schema for Phase 2
+2026-07-04 — BRIEF-13 — done — AI coach executes framework+strategy+context; value test confirms it beats the generic template
 2026-07-04 — BRIEF-08 — done — ANTHROPIC_API_KEY added as GitHub secret; workflow installs anthropic and passes key to notify.py
